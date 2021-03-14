@@ -3,10 +3,15 @@ $(document).ready(function(){
     var countryList= $(".countryList");
     var inputCountry = $(".inputCountry");
     var href ="";
-
+    
     $.get("http://ip-api.com/json", function(response) {
      inputCountry.val(response.country);
+     $(".RegionFlag img").attr("src",`./images/flags/${response.country}.png`);
+     $(".RegionFlag .text .apiRegion").text(response.country);
     }, "jsonp");
+
+
+    
 
     var request = new XMLHttpRequest();
     request.open('GET', "./country.json");
@@ -47,5 +52,58 @@ $(document).ready(function(){
         var liText = e.target.innerText;
         inputCountry.val(liText);
     });
+
+    
+    var experience = $(".navbarr_menu li").eq(0);
+    var company = $(".navbarr_menu li").eq(1);
+    var careers = $(".navbarr_menu li").eq(2);
+    $(".navbarr_menu li").click(function(){
+        if ($(".navbar_company").is(":hidden") && $(".navbar_experience").is(":hidden") && $(".navbar_careers").is(":hidden") ){
+            $(".dark").slideDown(200);
+        };
+        $(this).addClass("navbarlibefore");
+        if ($(this).text().match("Experience Audi")) {
+            if($(".navbar_company").is(":visible")){
+                $(".navbar_company").hide();
+                company.removeClass("navbarlibefore");
+            } else if ($(".navbar_careers").is(":visible")){
+                $(".navbar_careers").hide();
+                careers.removeClass("navbarlibefore");
+            }
+            if($(".navbar_experience").is(":visible")){
+                $(".dark").slideUp(200);
+                experience.removeClass("navbarlibefore");
+            }
+            $(".navbar_experience").slideToggle(300);
+        } else  if ($(this).text().match("Company")) {
+            if ($(".navbar_experience").is(":visible")){
+                $(".navbar_experience").hide();
+                experience.removeClass("navbarlibefore");
+            } else if ($(".navbar_careers").is(":visible")){
+                $(".navbar_careers").hide();
+                careers.removeClass("navbarlibefore");
+            }
+            if($(".navbar_company").is(":visible")){
+                $(".dark").slideUp(200);
+                company.removeClass("navbarlibefore");
+            }
+            $(".navbar_company").slideToggle(300);
+        } else  if ($(this).text().match("Careers")) {
+            if($(".navbar_company").is(":visible")){
+                $(".navbar_company").hide();
+                company.removeClass("navbarlibefore");
+            } else if ($(".navbar_experience").is(":visible")){
+                $(".navbar_experience").hide();
+                experience.removeClass("navbarlibefore");
+            }
+            if($(".navbar_careers").is(":visible")){
+                $(".dark").slideUp(200);
+                careers.removeClass("navbarlibefore");
+            }
+            $(".navbar_careers").slideToggle(300);
+        }
+        
+        
+    })
 
 })

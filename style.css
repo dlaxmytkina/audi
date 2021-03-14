@@ -5,97 +5,137 @@
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+ul {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: white;
+  color: #464646;
 }
 
 a {
   text-decoration: none;
+  color: #464646;
 }
 
 h1 {
   letter-spacing: 1px;
 }
 
-.navbarr {
+.navbarrElements {
   position: fixed;
   background: white;
   z-index: 1000;
-  width: 100%;
+  width: 86%;
   top: 0;
+  padding: 0 7%;
+  border-bottom: 1px solid #a7a7a7;
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 7rem;
-  padding: 0 10%;
-  border-bottom: 1px solid gray;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.navbarr_logo {
+.navbarrElements .navbarr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.navbarr_logo img {
-  width: 100px;
-}
-
-.navbarr_menu {
+.navbarrElements .navbarr_logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+}
+
+.navbarrElements .navbarr_logo img {
+  width: 80px;
+}
+
+.navbarrElements .navbarr_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 1.6rem;
-}
-
-.navbarr_menu a {
+  padding-left: 22px;
   position: relative;
-  text-decoration: none;
-  color: #464646;
-  padding: 15px 0;
+  height: 5rem;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbarr_menu a:hover {
-  color: black;
+.navbarrElements .navbarr_menu li {
+  position: relative;
+  margin: 0;
+  margin-right: 2.4rem;
+  border-bottom: 0 solid #464646;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbarr_menu a:before {
+.navbarrElements .navbarr_menu li:hover {
+  text-shadow: 0px 0px 1px black;
+}
+
+.navbarrElements .navbarr_menu li:before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   width: 0;
   height: 100%;
-  border-bottom: 2px solid #555;
+  border-bottom: 2px solid #464646;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.navbarr_menu li {
-  padding: 0 12px;
+.navbarrElements .navbarr_menu .navbarlibefore:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #464646;
 }
 
-.navbarr_menu a:hover:before {
+.navbarrElements .navbarr_menu li:hover:before {
   width: 100%;
+}
+
+.navbarrElements .navbarr_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbarrElements .navbarr_right .line {
+  border-left: 1px solid #464646;
+  height: 25px;
+  margin: 0 20px;
 }
 
 li {
@@ -108,9 +148,60 @@ img {
   transition: .6s all;
 }
 
+.navbar_experience, .navbar_company, .navbar_careers {
+  position: fixed;
+  top: 6rem;
+  z-index: 1000;
+  background: white;
+  border-top: 1px solid #a7a7a7;
+  border-bottom: 1px solid #a7a7a7;
+  width: 100%;
+  padding-left: 195px;
+  display: none;
+}
+
+.navbar_experience div, .navbar_company div, .navbar_careers div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6rem;
+}
+
+.navbar_experience div .navbarDopList, .navbar_company div .navbarDopList, .navbar_careers div .navbarDopList {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar_experience div .navbarDopList li, .navbar_company div .navbarDopList li, .navbar_careers div .navbarDopList li {
+  margin-right: 2.4rem;
+  font-size: 1.6rem;
+  padding: 15px 0;
+}
+
+.navbar_experience div .navbarDopList li:hover, .navbar_company div .navbarDopList li:hover, .navbar_careers div .navbarDopList li:hover {
+  text-shadow: 0px 0px 1px black;
+}
+
+.dark {
+  display: none;
+  background: rgba(0, 0, 0, 0.726);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+}
+
 .block_e-tron {
   overflow: hidden;
-  margin-top: 7rem;
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .block_e-tron img {
@@ -133,6 +224,7 @@ img {
   top: 11vh;
   color: white;
   letter-spacing: 3px;
+  z-index: 100;
 }
 
 .block_e-tron_text h1 {
@@ -141,6 +233,7 @@ img {
 }
 
 .block_e-tron_text2 {
+  z-index: 100;
   width: 46%;
   margin: 0 27%;
   display: -webkit-box;
@@ -243,7 +336,7 @@ img {
 }
 
 .info .block {
-  width: 49.5%;
+  width: 49.8%;
   margin-bottom: 2rem;
 }
 
@@ -393,8 +486,8 @@ img {
 .football .imgFootback {
   z-index: 1;
   width: 100%;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
 }
 
 .football:hover .imgFootback {
@@ -705,7 +798,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 16rem 0 4rem;
+  margin: 16rem 0 0;
 }
 
 .contactLogo a {
@@ -716,5 +809,88 @@ img {
   fill: #252525;
   height: auto;
   width: 3rem;
+}
+
+.footerRegion {
+  margin: 2rem 0;
+}
+
+.RegionFlagLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegionFlagLink .RegionFlag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegionFlagLink .RegionFlag img {
+  height: 30px;
+}
+
+.RegionFlagLink .RegionFlag .text {
+  font-size: 12px;
+  margin-left: 13px;
+}
+
+.RegionFlagLink .RegionFlag .text p {
+  margin: 4px 0;
+}
+
+.RegionFlagLink .RegionFlag .text p:nth-child(1) {
+  color: #a7a7a7;
+}
+
+.footerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 20%;
+  border-top: 1.5px solid #d6d6d6;
+  border-bottom: 1.5px solid #d6d6d6;
+}
+
+.footerMenu div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  letter-spacing: 0.5px;
+}
+
+.footerMenu div h2 {
+  font-size: 1.7rem;
+}
+
+.footerMenu div a {
+  color: gray;
+  font-size: 1.5rem;
+  margin: 1.2rem 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footerMenu div a:hover {
+  color: #a7a7a7;
+}
+
+.foterText {
+  color: gray;
+  font-size: 1.2rem;
+  letter-spacing: 0.7px;
+  margin: 3rem 0;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
