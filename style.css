@@ -14,6 +14,7 @@ body {
   padding: 0;
   background: white;
   color: #464646;
+  width: 100%;
 }
 
 a {
@@ -29,9 +30,9 @@ h1 {
   position: fixed;
   background: white;
   z-index: 1000;
-  width: 86%;
+  width: calc(100% - 200px);
   top: 0;
-  padding: 0 7%;
+  padding: 0 100px;
   border-bottom: 1px solid #a7a7a7;
   height: 6rem;
   display: -webkit-box;
@@ -154,9 +155,8 @@ img {
   z-index: 1000;
   background: white;
   border-top: 1px solid #a7a7a7;
-  border-bottom: 1px solid #a7a7a7;
-  width: 100%;
-  padding-left: 195px;
+  width: calc(100% - 202px);
+  padding: 0 0 0 202px;
   display: none;
 }
 
@@ -185,6 +185,40 @@ img {
 
 .navbar_experience div .navbarDopList li:hover, .navbar_company div .navbarDopList li:hover, .navbar_careers div .navbarDopList li:hover {
   text-shadow: 0px 0px 1px black;
+}
+
+.ModelsTechnology {
+  display: none;
+  top: 12rem;
+  position: fixed;
+  background: #f1f1f1;
+  color: #464646;
+  z-index: 1000;
+  width: calc(100% - 404px);
+  padding: 0  202px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #dddddd;
+}
+
+.ModelsTechnology div {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.ModelsTechnology a {
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .dark {

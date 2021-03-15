@@ -10,16 +10,12 @@ $(document).ready(function(){
      $(".RegionFlag .text .apiRegion").text(response.country);
     }, "jsonp");
 
-
-    
-
     var request = new XMLHttpRequest();
     request.open('GET', "./country.json");
     request.responseType = 'json';
     request.send();
     request.onload = function() {
     var jsonCountry = request.response;
-    
         $(".formbutton").click(function(){
             href= jsonCountry[inputCountry.val().toLowerCase()];
             window.open(href);
@@ -49,17 +45,19 @@ $(document).ready(function(){
     })
 
     $(".countryList li").click(function(e){
-        var liText = e.target.innerText;
+        var liText = $(this).text();
         inputCountry.val(liText);
     });
 
-    
+    //меню
     var experience = $(".navbarr_menu li").eq(0);
     var company = $(".navbarr_menu li").eq(1);
     var careers = $(".navbarr_menu li").eq(2);
     $(".navbarr_menu li").click(function(){
         if ($(".navbar_company").is(":hidden") && $(".navbar_experience").is(":hidden") && $(".navbar_careers").is(":hidden") ){
             $(".dark").slideDown(200);
+            
+            
         };
         $(this).addClass("navbarlibefore");
         if ($(this).text().match("Experience Audi")) {
@@ -72,6 +70,7 @@ $(document).ready(function(){
             }
             if($(".navbar_experience").is(":visible")){
                 $(".dark").slideUp(200);
+                $(".ModelsTechnology").hide();
                 experience.removeClass("navbarlibefore");
             }
             $(".navbar_experience").slideToggle(300);
@@ -85,6 +84,7 @@ $(document).ready(function(){
             }
             if($(".navbar_company").is(":visible")){
                 $(".dark").slideUp(200);
+                $(".ModelsTechnology").hide();
                 company.removeClass("navbarlibefore");
             }
             $(".navbar_company").slideToggle(300);
@@ -98,12 +98,24 @@ $(document).ready(function(){
             }
             if($(".navbar_careers").is(":visible")){
                 $(".dark").slideUp(200);
+                $(".ModelsTechnology").hide();
                 careers.removeClass("navbarlibefore");
             }
             $(".navbar_careers").slideToggle(300);
         }
         
         
+    })
+    var experienceDop = $(".navbar_experience_list .openlist");
+    $($(".navbarDopList li")).click(function(){
+        if($(this).text() === "Models & Technology"){
+            for(i=0;i<experienceDop.length, i!==0; i++){
+                if(experienceDop.eq(i).is(":visible")){
+                    experienceDop.eq(i).hide();
+                }
+            }
+               $(".ModelsTechnology").slideToggle(100); 
+        }
     })
 
 })

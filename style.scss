@@ -29,6 +29,7 @@ body{
     padding: 0;
     background: white;
     color: $gray;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -42,9 +43,9 @@ h1{
      position: fixed;
     background: white;
     z-index: 1000;
-    width: 86%;
+    width: calc(100% - 200px);
     top: 0; 
-    padding: 0 7%;
+    padding: 0 100px;
     border-bottom: 1px solid $lightgray;
     height: 6rem;
     display: flex;
@@ -147,12 +148,8 @@ img{
     z-index: 1000;
     background: white;
     border-top: 1px solid $lightgray;
-    border-bottom: 1px solid $lightgray;
-    width: 100%;
-    
-    
-    
-    padding-left: 195px;
+    width: calc(100% - 202px);
+    padding: 0 0 0 202px;
     display: none;
    
     div{ 
@@ -174,10 +171,33 @@ img{
             }
         }
     }
+    } 
+}
+
+.ModelsTechnology{
+    display: none;
+    div{
+        display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
     }
+    top: 12rem;
+    position: fixed;
+    background: rgb(241, 241, 241);
+    color: $gray;
+    z-index: 1000;
+    width: calc(100% - 404px);
+    padding: 0  202px ;
     
+    font-size: 1.6rem;
     
-    
+    border-bottom: 1px solid rgb(221, 221, 221);
+    a{
+        height: 6rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .dark{
