@@ -11,6 +11,7 @@ $(document).ready(function(){
     }, "jsonp");
 
     var request = new XMLHttpRequest();
+    
     request.open('GET', "./country.json");
     request.responseType = 'json';
     request.send();
@@ -117,5 +118,4 @@ $(document).ready(function(){
                $(".ModelsTechnology").slideToggle(100); 
         }
     })
-
 })
