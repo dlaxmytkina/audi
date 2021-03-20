@@ -902,6 +902,7 @@ img{
         .long_block{
             position: relative;
             width:49.6% ;
+            display: flex;
             overflow: hidden;
 
             margin: .2%;
@@ -909,7 +910,7 @@ img{
                 width: 100%;
             }
             img{
-                height: auto;
+                
                 width: 100%;
                 
             }
@@ -938,7 +939,7 @@ img{
             font-size: 3rem;
         }
         @media only screen and (max-device-width:360px){
-            font-size: 2.4rem;
+            font-size: 2.6rem;
         }
     }
     img{
@@ -1000,7 +1001,7 @@ img{
     img:nth-child(3){
     display: none;
     @media only screen and (max-device-width: 500px) {
-        display: flex;
+        display: block;
     }
     }
 

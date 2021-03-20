@@ -1243,6 +1243,9 @@ img {
 .long_blocks .long_block {
   position: relative;
   width: 49.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
   margin: .2%;
 }
@@ -1254,7 +1257,6 @@ img {
 }
 
 .long_blocks .long_block img {
-  height: auto;
   width: 100%;
 }
 
@@ -1297,7 +1299,7 @@ img {
 
 @media only screen and (max-device-width: 360px) {
   .Discover_the_world h1 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -1379,9 +1381,7 @@ img {
 
 @media only screen and (max-device-width: 500px) {
   .country img:nth-child(3) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 
