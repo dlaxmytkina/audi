@@ -1058,9 +1058,6 @@ img {
   overflow: hidden;
   height: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .football .imgFootback {
@@ -1086,7 +1083,15 @@ img {
 
 @media only screen and (max-device-width: 840px) {
   .football .imgFootbackadaptive940 {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  .football .imgFootbackadaptive940 {
+    display: none;
   }
 }
 
@@ -1100,7 +1105,9 @@ img {
 
 @media only screen and (max-device-width: 500px) {
   .football .imgFootbackadaptive500 {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

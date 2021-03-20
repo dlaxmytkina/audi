@@ -790,7 +790,6 @@ img{
     overflow: hidden;
     height: 100%;
     position: relative;
-    display: flex;
     .imgFootback{
     
         z-index: 1;
@@ -807,7 +806,10 @@ img{
         width: 100%;
         filter: brightness(40%);
     @media only screen and (max-device-width: 840px) {
-        display: block; 
+        display: flex; 
+    }
+    @media only screen and (max-device-width: 500px) {
+        display: none; 
     }
 }
 .imgFootbackadaptive500{
@@ -816,7 +818,7 @@ img{
         width: 100%;
         filter: brightness(40%);
     @media only screen and (max-device-width: 500px) {
-        display: block; 
+        display: flex; 
     }
 }
     &:hover .imgFootback{
