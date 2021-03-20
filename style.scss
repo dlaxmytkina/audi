@@ -43,6 +43,7 @@ h1{
 }
 img{
     display: flex;
+    height: auto;
 }
 
 .menuadaptive950{
@@ -464,7 +465,6 @@ img{
 .blockMainInfo {
     overflow: hidden;
     margin-top: 6rem;
-    display: flex;
     position: relative;
 
     
@@ -472,7 +472,6 @@ img{
     img{
         width: 100%;
         z-index: 1;
-        height: auto;
        
     }    
     img:nth-child(1){

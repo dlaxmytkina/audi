@@ -36,6 +36,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
 }
 
 @media only screen and (max-device-width: 950px) {
@@ -598,16 +599,12 @@ img {
 .blockMainInfo {
   overflow: hidden;
   margin-top: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
 }
 
 .blockMainInfo img {
   width: 100%;
   z-index: 1;
-  height: auto;
 }
 
 @media only screen and (max-device-width: 520px) {
