@@ -1243,9 +1243,6 @@ img {
 .long_blocks .long_block {
   position: relative;
   width: 49.6%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
   margin: .2%;
 }
@@ -1257,6 +1254,10 @@ img {
 }
 
 .long_blocks .long_block img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
   width: 100%;
 }
 

@@ -902,7 +902,6 @@ img{
         .long_block{
             position: relative;
             width:49.6% ;
-            display: flex;
             overflow: hidden;
 
             margin: .2%;
@@ -910,7 +909,8 @@ img{
                 width: 100%;
             }
             img{
-                
+                display: flex;
+                height: auto;
                 width: 100%;
                 
             }
