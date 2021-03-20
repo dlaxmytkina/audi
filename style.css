@@ -1311,8 +1311,6 @@ img {
 
 .Discover_the_world a {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .Discover_the_world .h {
