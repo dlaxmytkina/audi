@@ -369,20 +369,17 @@ h1 {
 }
 
 .navbarrElements .navbarr_logo_adaptive a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .navbarrElements .navbarr_logo_adaptive a img {
   width: 80px;
+  height: auto;
 }
 
 @media screen and (max-width: 1200px) {
   .navbarrElements .navbarr_logo_adaptive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 
@@ -1593,6 +1590,32 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.RegionFlagLink_adaptive950 .RegionFlag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegionFlagLink_adaptive950 .RegionFlag img {
+  height: 30px;
+}
+
+.RegionFlagLink_adaptive950 .RegionFlag .text {
+  font-size: 12px;
+  margin-left: 13px;
+}
+
+.RegionFlagLink_adaptive950 .RegionFlag .text p {
+  margin: 4px 0;
+}
+
+.RegionFlagLink_adaptive950 .RegionFlag .text p:nth-child(1) {
+  color: #a7a7a7;
 }
 
 .RegionFlagLink {

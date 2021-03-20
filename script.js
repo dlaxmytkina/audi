@@ -55,6 +55,7 @@ $(document).ready(function(){
     var company = $(".navbarr_menu .mainMenuLine").eq(1);
     var careers = $(".navbarr_menu .mainMenuLine").eq(2);
     $(".navbarr_menu .mainMenuLine").click(function(){
+        
         if($(window).width()>1200){
             if ($(".navbar_company").is(":hidden") && $(".navbar_experience").is(":hidden") && $(".navbar_careers").is(":hidden") ){
             $(".dark").slideDown(200);

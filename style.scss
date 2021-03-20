@@ -289,13 +289,14 @@ h1{
 .navbarr_logo_adaptive{
     display: none;
     a{
-        display: flex;
+        display: block;
         img{
             width: 80px;
+            height: auto;
         } 
     }
     @media screen and (max-width: 1200px) {
-        display: flex;
+        display: block;
     }
         
 }
@@ -1140,6 +1141,27 @@ border-bottom: 1px solid $gray;
 @media screen and (max-width:950px) {
     display: flex;
 }
+
+.RegionFlag{
+    display: flex;
+    align-items: center;
+    img{
+    height: 30px;
+    }
+    .text{
+        font-size: 12px;
+        margin-left: 13px;
+        
+        
+        p{
+            margin: 4px 0;
+        }
+        p:nth-child(1){
+            color: $lightgray;
+        }
+    
+}
+}  
 }
 .RegionFlagLink{
    display: flex;  
