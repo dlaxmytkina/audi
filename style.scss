@@ -19,7 +19,7 @@ $lightgray: rgb(167, 167, 167);
     color: $gray;
     font-size: 10px;
     font-family: 'Noto Sans JP', sans-serif;
-    @media screen and (max-width:510px){
+    @media only screen and (max-device-width:510px){
         font-size: 8px;
         
     }
@@ -41,26 +41,24 @@ a{
 h1{
     letter-spacing: 1px;
 }
-img{
-    height: initial;
-}
+
 .menuadaptive950{
     
-    @media  screen and (max-width: 950px) {
+    @media  only screen and (max-device-width: 950px) {
        
         left: 0;
-    position: absolute;
-    top: 6rem;
-    width: 100%;
-    height: max-content;
-    display: none;
+        position: absolute;
+        top: 6rem;
+        width: 100%;
+        height: max-content;
+        display: none;
     }
     &_bottom{
        display: none;
        padding: 3rem 6rem 0 6rem;
        width: calc(100% - 12rem);
-       @media  screen and (max-width: 950px) {
-       display: block;
+       @media  only screen and (max-device-width: 950px) {
+        display: block;
         }
         p{
             font-size: 1.2rem;
@@ -105,19 +103,19 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: 950px) {
+    @media only screen and (max-device-width: 950px) {
         border-bottom: none;
         padding: 0 6rem; 
         width: calc(100% - 12rem);
      }
     .RegionFlagLink{
-        @media screen and (max-width:950px) {
+        @media only screen and (max-device-width:950px) {
             display: none;
         }
-    .text{
-    @media screen and (max-width:1200px) {
-        display: none;
-    }
+        .text{
+        @media only screen and (max-device-width:1200px) {
+            display: none;
+        }
     }
     }
 
@@ -130,14 +128,14 @@ img{
         height: 24px;
         cursor: pointer;
         display: none;
-        @media screen and (max-width: 1200px) {
+        @media only screen and (max-device-width: 1200px) {
             display: block;
         }
     
     }
     .MenuP{
         display: none;
-        @media screen and (max-width: 1200px) {
+        @media only screen and (max-device-width: 1200px) {
             display: block;
             font-size: 1.6rem;
             padding-left: 15px;
@@ -172,9 +170,10 @@ img{
             display: flex;
             img{
                 width: 80px;
+                height: 28px;
             } 
         }
-        @media screen and (max-width: 1200px) {
+        @media only screen and (max-device-width: 1200px) {
             display: none;
         }
     }
@@ -186,7 +185,7 @@ img{
         font-size: 1.6rem;
         padding-left: 22px;
          height: 5rem;
-         @media screen and (max-width: 950px) {
+         @media only screen and (max-device-width: 950px) {
             flex-direction: column;
             height: fit-content;
             background-color: rgb(245, 245, 245);
@@ -195,7 +194,7 @@ img{
         }
         }
         .navbarr_menu_li{
-            @media screen and (max-width: 950px) {
+            @media only screen and (max-device-width: 950px) {
                border-bottom: 1px solid rgb(204, 204, 204); 
                
             }
@@ -206,7 +205,7 @@ img{
         
         display: flex;
         align-items: center;
-        @media screen and (max-width: 1200px) {
+        @media only screen and (max-device-width: 1200px) and (min-width: 950px ) {
             position: absolute;
             top: 6rem;
             z-index: 1000;
@@ -218,7 +217,7 @@ img{
             padding-left: 50px;
             display: none;
         }
-        @media screen and (max-width: 950px) {
+        @media only screen and (max-device-width: 950px) {
             position: initial;
             height: auto;
             align-items: normal;
@@ -240,10 +239,10 @@ img{
             display: flex;
             align-items: center;
             cursor: pointer;
-            @media screen and (max-width: 1200px) {
+            @media only screen and (max-device-width: 1200px) and (min-width: 950px) {
                 height: 90%;
             }
-            @media screen and (max-width: 950px) {
+            @media only screen and (max-device-width: 950px) {
                 height: 6rem;
             }
            
@@ -264,7 +263,7 @@ img{
             height: 100%;
             border-bottom: 2px solid $gray; 
             transition: all 0.5s;
-            @media screen and (max-width: 950px) {
+            @media only screen and (max-device-width: 950px) {
                 display: none;
             }
         }
@@ -279,7 +278,7 @@ img{
             width: 100%;
             height: 100%;
             border-bottom: 2px solid $gray; 
-            @media screen and (max-width: 950px) {
+            @media only screen and (max-device-width: 950px) {
                 display: none;
             }
         }
@@ -295,10 +294,10 @@ img{
         display: block;
         img{
             width: 80px;
-            height: fit-content;
+            height: 28px;
         } 
     }
-    @media screen and (max-width: 1200px) {
+    @media only screen and (max-device-width: 1200px) {
         display: block;
     }
         
@@ -336,7 +335,7 @@ img{
     width: calc(100% - 202px);
     padding: 0 0 0 202px;
     display: none;
-    @media screen and (max-width: 1200px){
+    @media only screen and (max-device-width: 1200px) and (min-width: 950px){
         top: 12rem;
         padding-left: 70px;
         left: 0;
@@ -344,7 +343,7 @@ img{
         background-color: rgb(245, 245, 245);
         border-top: none;
     }
-    @media screen and (max-width: 950px){
+    @media only screen and (max-device-width: 950px){
         position: static;
         height: max-content;
         padding-left: 0;
@@ -360,7 +359,7 @@ img{
         .navbarDopList{
             padding: 0;
     display: flex;
-    @media screen and (max-width: 950px){
+    @media only screen and (max-device-width: 950px){
         flex-direction: column;
     }
     
@@ -389,7 +388,7 @@ img{
 .menu_sustainability,.menu_research,.menu_ComplianceRiskManagement,.menu_pupils,.menu_students,.menu_graduates{
     display: none;
     left: 0;
-    @media screen and (max-width: 1200px){
+    @media only screen and (max-device-width: 1200px) and (min-width: 950px){
         top: 18rem;
         padding-left: 70px;
         left: 0;
@@ -397,7 +396,7 @@ img{
         background-color: white;
         border-top: none;
     }
-    @media screen and (max-width:950px){
+    @media only screen and (max-device-width:950px){
         position: initial;
     top: 12rem;
     font-weight: normal;
@@ -408,14 +407,14 @@ img{
         grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     width: 100%;
-    @media screen and (max-width:950px){
+    @media only screen and (max-device-width:950px){
         display: block;
     }
     div{
         height: 6rem;
         display: flex;
         align-items: center;
-        @media screen and (max-width:950px){
+        @media only screen and (max-device-width:950px){
         height: auto;
         }
         a{
@@ -448,7 +447,7 @@ img{
     width: 100%;
     height: 100%;
     z-index: 110;
-    @media screen and (max-width:950px){
+    @media only screen and (max-device-width:950px){
         background: white;
     }
 }
@@ -468,13 +467,13 @@ img{
        
     }    
     img:nth-child(1){
-        @media screen and (max-width:520px){
+        @media only screen and (max-device-width:520px){
             display: none;
         }
     }
     img:nth-child(2){
         display: none;
-        @media screen and (max-width:520px){
+        @media only screen and (max-device-width:520px){
             display: block;
         }
     }
@@ -495,13 +494,13 @@ img{
         h1{
             font-size: 5rem;
             color: white;
-            @media screen and (max-width:840px){
+            @media only screen and (max-device-width:840px) and (min-width: 570px){
                 font-size: 4rem;
             }
-            @media screen and (max-width:570px){
+            @media only screen and (max-device-width:570px) and (min-width: 510px){
                 font-size: 3.5rem;
             }
-            @media screen and (max-width:510px){
+            @media only screen and (max-device-width:510px){
                 font-size: 3rem;
             }
         }
@@ -552,7 +551,7 @@ img{
         text-align: center;
         font-size: 1.8rem;
         letter-spacing: 0.8px;
-        @media screen and (max-width:790px){
+        @media only screen and (max-device-width:790px){
             letter-spacing: 0;
         }
     }
@@ -564,7 +563,7 @@ img{
         margin: 0 auto;
         font-size: 1.4rem;
         color: $gray;
-        @media screen and (max-width:580px){
+        @media only screen and (max-device-width:580px){
             width: 90%;
             margin: 0 5%;
         }
@@ -582,10 +581,10 @@ img{
     margin-bottom: 4rem;
     h1{
         font-size: 6rem;
-        @media screen and (max-width:1000px){
+        @media only screen and (max-device-width:1000px) and (min-width: 400px){
            font-size: 5rem;
         }
-        @media screen and (max-width:400px){
+        @media only screen and (max-device-width:400px){
             font-size: 4rem;
          }
         
@@ -594,15 +593,15 @@ img{
        font-size: 1.8rem; 
        padding: 0 25%;
        line-height: 3rem;
-       @media screen and (max-width: 880px) {
+       @media only screen and (max-device-width: 880px) and (min-width: 790px){
         padding: 0 20%;
     }
-    @media screen and (max-width:790px){
+    @media only screen and (max-device-width:790px) and (min-width: 400px){
         font-size: 1.7rem;
         line-height: 2.8rem;
         padding: 0 10%;
     }
-    @media screen and (max-width:400px){
+    @media only screen and (max-device-width:400px){
         padding: 0 5%;
      }
 
@@ -611,7 +610,7 @@ img{
 }
 .wrapper{
     margin: 0 7%;
-    @media screen and (max-width:980px){
+    @media only screen and (max-device-width:980px){
         margin: 0 5%;
     }
 }
@@ -668,19 +667,19 @@ img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    @media  screen and (max-width: 1020px) {
+    @media  only screen and (max-device-width: 1020px) {
         flex-direction: column;
     }
     img{
         width: 60%;
-        @media  screen and (max-width: 1020px) {
+        @media  only screen and (max-device-width: 1020px) {
             width: 100%;
         }
     }
     .text{
         
         padding-left: 20px;
-        @media screen and (max-width:1020px){
+        @media only screen and (max-device-width:1020px){
             padding-left: 0;
             
         }
@@ -720,7 +719,7 @@ img{
     flex-wrap: wrap;
     cursor: pointer;
     margin-bottom: 4rem;
-    @media screen and (max-width: 830px) {
+    @media only screen and (max-device-width: 830px) {
         flex-direction: column;
     }
 
@@ -732,7 +731,7 @@ img{
     .block{
         width: 33%;
         margin-bottom: 2rem;
-        @media screen and (max-width: 830px) {
+        @media only screen and (max-device-width: 830px) {
             width: 100%;
         }
 
@@ -756,10 +755,10 @@ img{
         h3{
             font-size: 2rem;
             margin: 10px 0;
-            @media screen and (max-width:920px) {
+            @media only screen and (max-device-width:920px) and (min-width: 830px){
                 font-size: 1.5rem;
             }
-            @media screen and (max-width:830px) {
+            @media only screen and (max-device-width:830px) {
                 font-size: 1.7rem;
             }
         }
@@ -767,10 +766,10 @@ img{
         .textImg{
             font-size: 1.5rem;
             line-height: 180%;
-            @media screen and (max-width:920px) {
+            @media only screen and (max-device-width:920px) and (min-width: 830px){
                 font-size: 1.2rem;
             }
-            @media screen and (max-width:830px) {
+            @media only screen and (max-device-width:830px) {
                 font-size: 1.5rem;
             }
         }
@@ -787,7 +786,7 @@ img{
         z-index: 1;
         width: 100%;
         filter: brightness(40%);
-        @media screen and (max-width: 840px) {
+        @media only screen and (max-device-width: 840px) {
             display: none; 
         }
 
@@ -797,7 +796,7 @@ img{
     z-index: 1;
         width: 100%;
         filter: brightness(40%);
-    @media screen and (max-width: 840px) {
+    @media only screen and (max-device-width: 840px) {
         display: block; 
     }
 }
@@ -806,7 +805,7 @@ img{
     z-index: 1;
         width: 100%;
         filter: brightness(40%);
-    @media screen and (max-width: 500px) {
+    @media only screen and (max-device-width: 500px) {
         display: block; 
     }
 }
@@ -828,7 +827,7 @@ img{
         justify-content: space-between;
         color: white;
         align-items: center;
-        @media screen and (max-width: 840px) {
+        @media only screen and (max-device-width: 840px) {
             flex-direction: column; 
         }
 
@@ -836,7 +835,7 @@ img{
         
         .imgFoot{
             width: 60%;
-            @media screen and (max-width: 840px) {
+            @media only screen and (max-device-width: 840px) {
                 width: 100%; 
                 margin-bottom: 2rem;
             }
@@ -857,11 +856,11 @@ img{
                 font-size: 1.4rem;
                 line-height: 2.2rem;
                 letter-spacing: .5px;
-                @media screen and (max-width:600px) {
+                @media only screen and (max-device-width:600px) and (min-width: 510px) {
                     font-size: 1.2rem;
                     line-height: 1.9rem;
                 }
-                @media screen and (max-width:510px) {
+                @media only screen and (max-device-width:510px) {
                     font-size: 1.4rem;
                     line-height: 1.9rem;
                 }
@@ -886,7 +885,7 @@ img{
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
-        @media screen and (max-width:770px){
+        @media only screen and (max-device-width:770px){
             flex-direction: column;
         }
 
@@ -897,7 +896,7 @@ img{
             overflow: hidden;
 
             margin: .2%;
-            @media screen and (max-width:770px){
+            @media only screen and (max-device-width:770px){
                 width: 100%;
             }
             img{
@@ -923,13 +922,13 @@ img{
     align-items: center;
     h1{
         font-size: 5rem;
-        @media screen and (max-width: 768px){
+        @media only screen and (max-device-width: 768px) and (min-width: 580px){
             font-size: 4rem;
         }
-        @media screen and (max-width:580px){
+        @media only screen and (max-device-width:580px) and (min-width: 360px){
             font-size: 3rem;
         }
-        @media screen and (max-width:360px){
+        @media only screen and (max-device-width:360px){
             font-size: 2.6rem;
         }
     }
@@ -974,7 +973,7 @@ img{
 
     img:nth-child(1){
         
-    @media screen and (max-width: 910px) {
+    @media only screen and (max-device-width: 910px) {
         display: none;
     }
 
@@ -982,16 +981,16 @@ img{
     img:nth-child(2){
       
     display: none;
-    @media screen and (max-width: 910px) {
+    @media only screen and (max-device-width: 910px) and (min-width: 500px) {
         display: block;
     }
-    @media screen and (max-width: 500px) {
+    @media only screen and (max-device-width: 500px) {
         display: none;
     }
     }
     img:nth-child(3){
     display: none;
-    @media screen and (max-width: 500px) {
+    @media only screen and (max-device-width: 500px) {
         display: block;
     }
     }
@@ -1013,14 +1012,14 @@ img{
             font-size: 3.5rem;
             letter-spacing: 1px;
             margin-top: 0;
-            @media screen and (max-width:720px) {
+            @media only screen and (max-device-width:720px) and (min-width: 400px){
                 margin-bottom: 1rem;
             }
-            @media screen and (max-width:400px){
+            @media only screen and (max-device-width:400px) and (min-width: 350px){
                 font-size: 3rem;
                 
             }
-            @media screen and (max-width:350px){
+            @media only screen and (max-device-width:350px){
                 font-size: 2.5rem;
                 
             }
@@ -1030,11 +1029,9 @@ img{
         .countryForm{
             display: flex;
             align-items: flex-end;
-            @media screen and (max-width: 480px) {
+            @media only screen and (max-device-width: 480px) {
                flex-direction: column;
                align-items: normal;
-            } 
-            @media screen and (max-width: 480px) {
                    width: 90%;
                    padding: 0 5%;
                  }
@@ -1043,10 +1040,10 @@ img{
         
                 width: 40rem;
                 margin-right: 3rem;
-                @media screen and (max-width:720px) {
+                @media only screen and (max-device-width:720px) and (min-width: 480px) {
                     width: 25rem;
                 }
-                @media screen and (max-width: 480px) {
+                @media only screen and (max-device-width: 480px) {
                     width: 100%;
                     margin-bottom: 1rem;
                     margin-right: 0;
@@ -1105,7 +1102,7 @@ img{
                         background: rgba(255, 255, 255, 0.5);
                         border: 1px solid transparent;
                     }
-                    @media screen and (max-width:720px) {
+                    @media only screen and (max-device-width:720px) {
                         width: 15rem;
                         height: 4rem;
                     }
@@ -1119,7 +1116,7 @@ img{
     display: flex;
     justify-content: center;
     margin: 16rem 0 0;
-    @media screen and (max-width:550px){
+    @media only screen and (max-device-width:550px){
         margin: 12rem 0 0;
      }
     a{
@@ -1137,13 +1134,13 @@ img{
     margin: 2rem 0;
 }
 .RegionFlagLink_adaptive950{
-display: none;
-padding-bottom: 1rem;
-border-bottom: 1px solid $gray;
+    display: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $gray;
 
-@media screen and (max-width:950px) {
-    display: flex;
-}
+    @media only screen and (max-device-width:950px) {
+        display: flex;
+    }
 
 .RegionFlag{
     display: flex;
@@ -1228,7 +1225,7 @@ border-bottom: 1px solid $gray;
 }
 
 
-@media screen and (max-width: 1260px) {
+@media only screen and (max-device-width: 1260px) {
     .blockMainInfo_text{
         width: 60%;
         margin: 0 20%;
@@ -1239,7 +1236,7 @@ border-bottom: 1px solid $gray;
         margin: 0 20%;
     }
   }
-  @media screen and (max-width: 1100px) {
+  @media only screen and (max-device-width: 1100px) {
     .blockMainInfo_text2{
         display: none;
     }
@@ -1254,7 +1251,7 @@ border-bottom: 1px solid $gray;
     
     
   }
-  @media screen and (max-width: 965px) {
+  @media only screen and (max-device-width: 965px) {
     .blockMainInfo_text{
             width: 80%;
             margin: 0 10%;
