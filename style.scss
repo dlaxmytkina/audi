@@ -909,7 +909,6 @@ img{
                 width: 100%;
             }
             img{
-                display: flex;
                 height: auto;
                 width: 100%;
                 
@@ -939,7 +938,7 @@ img{
             font-size: 3rem;
         }
         @media only screen and (max-device-width:360px){
-            font-size: 2.6rem;
+            font-size: 2.4rem;
         }
     }
     img{
