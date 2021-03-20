@@ -260,7 +260,7 @@ h1 {
   }
 }
 
-@media only screen and (max-device-width: 1200px) and (min-width: 950px) {
+@media only screen and (min-width: 950px) and (max-device-width: 1200px) {
   .navbarrElements .navbarr_menu {
     position: absolute;
     top: 6rem;
@@ -439,6 +439,9 @@ img {
     height: -moz-max-content;
     height: max-content;
     padding-left: 0;
+    border-top: none;
+    width: 100%;
+    background: whitesmoke;
   }
 }
 
@@ -520,6 +523,8 @@ img {
     top: 12rem;
     font-weight: normal;
     background: whitesmoke;
+    width: calc(100% - 8.5rem);
+    padding-left: 8.5rem;
   }
 }
 
@@ -596,6 +601,7 @@ img {
 .blockMainInfo img {
   width: 100%;
   z-index: 1;
+  height: auto;
 }
 
 @media only screen and (max-device-width: 520px) {

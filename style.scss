@@ -205,7 +205,7 @@ h1{
         
         display: flex;
         align-items: center;
-        @media only screen and (max-device-width: 1200px) and (min-width: 950px ) {
+        @media only screen and (min-width: 950px ) and  (max-device-width: 1200px){
             position: absolute;
             top: 6rem;
             z-index: 1000;
@@ -347,6 +347,9 @@ img{
         position: static;
         height: max-content;
         padding-left: 0;
+        border-top: none;
+        width: 100%;
+        background: whitesmoke;
     }
     &_cover{
         display: flex;
@@ -401,6 +404,8 @@ img{
     top: 12rem;
     font-weight: normal;
     background:  rgb(245, 245, 245);
+    width: calc(100% - 8.5rem);
+    padding-left: 8.5rem;
     }
     .menuOpenList{
         display: grid;
@@ -464,6 +469,7 @@ img{
     img{
         width: 100%;
         z-index: 1;
+        height: auto;
        
     }    
     img:nth-child(1){
