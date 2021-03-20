@@ -32,6 +32,12 @@ h1 {
   letter-spacing: 1px;
 }
 
+img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 @media screen and (max-width: 950px) {
   .menuadaptive950 {
     left: 0;
