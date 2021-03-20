@@ -1303,7 +1303,7 @@ img {
 
 @media only screen and (max-device-width: 360px) {
   .Discover_the_world h1 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -1504,6 +1504,12 @@ img {
   overflow-x: hidden;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .country_search .countryForm .form .countryList {
+    width: 90%;
+  }
+}
+
 .country_search .countryForm .form .countryList li {
   font-size: 1.5rem;
   height: 5rem;
@@ -1667,6 +1673,18 @@ img {
   border-bottom: 1.5px solid #d6d6d6;
 }
 
+@media only screen and (max-device-width: 800px) and (min-device-width: 410px) {
+  .footerMenu {
+    padding: 3rem 10%;
+  }
+}
+
+@media only screen and (max-device-width: 410px) {
+  .footerMenu {
+    padding: 3rem 0;
+  }
+}
+
 .footerMenu div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1682,12 +1700,24 @@ img {
   font-size: 1.7rem;
 }
 
+@media only screen and (max-device-width: 700px) {
+  .footerMenu div h2 {
+    font-size: 1.4rem;
+  }
+}
+
 .footerMenu div a {
   color: gray;
   font-size: 1.5rem;
   margin: 1.2rem 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media only screen and (max-device-width: 700px) {
+  .footerMenu div a {
+    font-size: 1.3rem;
+  }
 }
 
 .footerMenu div a:hover {
