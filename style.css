@@ -1056,7 +1056,7 @@ img {
 
 .football {
   overflow: hidden;
-  height: 100%;
+  height: auto;
   position: relative;
 }
 
