@@ -827,9 +827,6 @@ img {
 .hidden {
   width: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .info {
@@ -858,6 +855,10 @@ img {
 
 .info .block img {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
 }
 
 .info .info_text {

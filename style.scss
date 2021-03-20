@@ -623,7 +623,7 @@ img{
 .hidden{
     width: 100%;
     overflow: hidden;
-    display: flex;
+    
 }
 .info{
     display: flex;
@@ -634,6 +634,7 @@ img{
     .block:hover  img{
         transform: scale(1.2);
         filter: brightness(80%);
+
     }
     
     .block{
@@ -643,7 +644,8 @@ img{
         
         img{
             width: 100%;
-            
+            display: flex;
+            height: auto;
         }
     }
 
