@@ -292,7 +292,7 @@ h1{
         display: block;
         img{
             width: 80px;
-            height: 28px;
+            height: fit-content;
         } 
     }
     @media screen and (max-width: 1200px) {

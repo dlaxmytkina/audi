@@ -374,7 +374,9 @@ h1 {
 
 .navbarrElements .navbarr_logo_adaptive a img {
   width: 80px;
-  height: 28px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media screen and (max-width: 1200px) {
