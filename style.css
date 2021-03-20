@@ -32,6 +32,12 @@ h1 {
   letter-spacing: 1px;
 }
 
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media only screen and (max-device-width: 950px) {
   .menuadaptive950 {
     left: 0;
